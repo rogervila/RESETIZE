@@ -1,0 +1,147 @@
+/**
+ * RESETIZE v1.0.0
+ * Created by Jon Romero and Roger Vilà
+ * http://rogervila.github.io/resetize
+ */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    font-smooth: always;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}
+
+hr{
+    background: #969696;
+    border: none;
+    height: 1px;
+}
+
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+button:not([disabled]), 
+input[type="button"]:not([disabled]),
+input[type="submit"]:not([disabled]),
+input[type="reset"]:not([disabled]){
+    background: transparent;
+    border: solid #b0b0b0 1px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 0.2em 1em;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+}
+
+button:active, 
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active{
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active{
+    outline: none;
+}
+
+button[disabled=disabled], 
+button:disabled, 
+input[type="button"][disabled=disabled],
+input[type="button"]:disabled,
+input[type="submit"][disabled=disabled],
+input[type="submit"]:disabled,
+input[type="reset"][disabled=disabled],
+input[type="reset"]:disabled{
+    background: #f8f8f8;
+    color: #A0A0A0;
+    border: none;
+    border-radius: 6px;
+    padding: 3px 15px;
+    margin-bottom: 0.5em;
+}
+
+
+a{
+    color: #0074D9; 
+}
+
+
+ul li, ol > li ol li{
+    list-style: none;
+}
+
+ul li::before{
+    content: "· ";
+}
+
+ol > li ol li::before{
+    content: "· ";
+}
+
+
+
+table{
+    border-collapse:collapse;
+}
+
+table th{
+    border-bottom: solid #969696 1px;
+    padding: 0.5em 1em;
+}
+
+table td{
+    border-bottom: solid #b0b0b0 1px;
+    padding: 0.5em 1em;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(http://s27.postimg.org/6xq9dtzi7/arrow_216_10.png) 90% center no-repeat;
+    border: solid #b0b0b0 1px;
+    border-radius: 6px;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+select > *{
+    padding: 0.7em;
+    
+}
+
+input::-moz-focus-inner,
+select::-moz-focus-inner,
+select > *::-moz-focus-inner{ 
+  border: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+textarea{
+    background: transparent;
+    border: solid #b0b0b0 1px;
+    border-radius: 6px;
+    padding: 0.7em;
+}
